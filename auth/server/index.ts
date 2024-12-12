@@ -12,7 +12,8 @@ const app = express()
 app.use(express.json())
 app.use((cors({
     // origin: "http://localhost:3001",
-    origin: "https://react-micro-frontend-auth.vercel.app",
+    // origin: "https://react-micro-frontend-auth.vercel.app",
+    origin: "https://react-micro-frontend-zeta.vercel.app",
     credentials: true
 })))
 app.use(cookieParser())

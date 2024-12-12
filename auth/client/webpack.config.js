@@ -11,7 +11,7 @@ module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    publicPath: argv.mode === 'production' ? '/' : 'http://localhost:3001/'
+    publicPath: 'https://react-micro-frontend-auth.vercel.app/'
   },
 
   resolve: {

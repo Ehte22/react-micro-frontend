@@ -8,9 +8,8 @@ const deps = require("./package.json").dependencies;
 const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
-  entry: './src/index.ts',
   output: {
-    publicPath: "https://react-micro-frontend-bice.vercel.app/",
+    publicPath: "http://localhost:3001/",
   },
 
   resolve: {

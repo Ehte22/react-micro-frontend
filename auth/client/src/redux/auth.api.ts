@@ -3,7 +3,7 @@ import { IAuth } from "../models/auth.interface"
 
 export const authApi = createApi({
     reducerPath: "authApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `http://localhost:5000/api/v1/auth`, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `${process.env.VITE_BACKEND_URL}/api/v1/auth`, credentials: "include" }),
     tagTypes: ["auth"],
     endpoints: (builder) => {
         return {

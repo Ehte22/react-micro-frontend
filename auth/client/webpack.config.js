@@ -11,8 +11,7 @@ module.exports = (_, argv) => ({
   entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "[name].[contenthash].js",
-    chunkFilename: "[name].[contenthash].js",
+    filename: "bundle.js",
     publicPath: "https://react-micro-frontend-bice.vercel.app/",
   },
 

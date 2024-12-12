@@ -7,6 +7,7 @@ const App = () => {
 
   return <>
     <h1>Layout App</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, eius?</p>
   </>
 }
 const rootElement = document.getElementById('app')

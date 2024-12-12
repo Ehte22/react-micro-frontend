@@ -12,7 +12,7 @@ module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "https://react-micro-frontend-bice.vercel.app",
+    publicPath: "https://react-micro-frontend-bice.vercel.app/",
   },
 
   resolve: {

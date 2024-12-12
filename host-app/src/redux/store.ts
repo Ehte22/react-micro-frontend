@@ -6,9 +6,9 @@ import { productApi } from 'product/redux/product.api';
 const injectedReducers: { [key: string]: Reducer } = {};
 
 const reduxStore = configureStore({
-    reducer: combineReducers({
-        auth: authSlice
-    }),
+        reducer: combineReducers({
+            auth: authSlice
+        }),
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(authApi.middleware, productApi.middleware),
 });

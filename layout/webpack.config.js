@@ -11,7 +11,8 @@ module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    publicPath: 'https://react-micro-frontend-layout.vercel.app/'
+    // publicPath: 'https://react-micro-frontend-layout.vercel.app/'
+    publicPath: 'http://localhost:3003/'
   },
 
   resolve: {
@@ -67,7 +68,8 @@ module.exports = (_, argv) => ({
       name: "layout",
       filename: "remoteEntry.js",
       remotes: {
-        auth: "auth@http://https://react-micro-frontend-auth.vercel.app/remoteEntry.js"
+        // auth: "auth@http://https://react-micro-frontend-auth.vercel.app/remoteEntry.js"
+        auth: "auth@http://localhost:3001/remoteEntry.js"
       },
       exposes: {
         "./Navbar": "./src/components/Navbar.tsx",

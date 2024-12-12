@@ -10,9 +10,7 @@ const printCompilationMessage = require('./compilation.config.js');
 module.exports = (_, argv) => ({
   entry: './src/index.ts',
   output: {
-    publicPath: argv.mode === 'development' ? "http://localhost:3001/" : "/",
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    publicPath: 'auto',
   },
 
   resolve: {

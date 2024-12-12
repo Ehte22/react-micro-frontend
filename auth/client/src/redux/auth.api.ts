@@ -1,9 +1,12 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { IAuth } from "../models/auth.interface"
+console.log(process.env.VITE_BACKEND_URL);
+
 
 export const authApi = createApi({
     reducerPath: "authApi",
-    baseQuery: fetchBaseQuery({ baseUrl: `${process.env.VITE_BACKEND_URL}/api/v1/auth`, credentials: "include" }),
+    // baseQuery: fetchBaseQuery({ baseUrl: `${process.env.VITE_BACKEND_URL}/api/v1/auth`, credentials: "include" }),
+    baseQuery: fetchBaseQuery({ baseUrl: `https://react-micro-frontend-auth-backend.vercel.app/api/v1/auth`, credentials: "include" }),
     tagTypes: ["auth"],
     endpoints: (builder) => {
         return {

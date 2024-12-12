@@ -11,7 +11,7 @@ module.exports = (_, argv) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    publicPath: "https://react-micro-frontend-layout-ng28dwz2q.vercel.app/"
+    publicPath: argv.mode === 'production' ? '/' : 'http://localhost:3003/'
   },
 
   resolve: {

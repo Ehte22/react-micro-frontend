@@ -67,7 +67,7 @@ module.exports = (_, argv) => ({
       remotes: {
         auth: "auth@http://localhost:3001/remoteEntry.js",
         product: "product@http://localhost:3002/remoteEntry.js",
-        layout: "layout@https://react-micro-frontend-layout-ng28dwz2q.vercel.app/remoteEntry.js",
+        layout: "layout@http://localhost:3003/remoteEntry.js",
       },
       exposes: {},
       shared: {

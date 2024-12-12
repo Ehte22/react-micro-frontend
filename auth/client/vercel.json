@@ -1,5 +1,4 @@
 {
-    "version": 2,
     "builds": [
         {
             "src": "package.json",
@@ -7,18 +6,6 @@
             "config": {
                 "distDir": "dist"
             }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/remoteEntry.js",
-            "headers": {
-                "Cache-Control": "max-age=86400"
-            }
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/index.html"
         }
     ]
 }

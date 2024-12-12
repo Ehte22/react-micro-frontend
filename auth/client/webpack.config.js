@@ -10,7 +10,6 @@ const printCompilationMessage = require('./compilation.config.js');
 module.exports = (_, argv) => ({
   entry: './src/index.ts',
   output: {
-    path: path.resolve(__dirname, "dist"),
     publicPath: "https://react-micro-frontend-bice.vercel.app/",
   },
 

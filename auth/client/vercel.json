@@ -1,8 +1,9 @@
 {
-    "rewrites": [
+    "builds": [
         {
-            "source": "/(.*)",
-            "destination": "/index.html"
+            "src": "webpack.config.js",
+            "use": "@vercel/node"
         }
-    ]
+    ],
+    "outputDirectory": "dist"
 }

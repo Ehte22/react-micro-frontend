@@ -13,6 +13,7 @@ module.exports = (_, argv) => ({
     filename: 'bundle.js',
     // publicPath: 'http://localhost:3001/'
     publicPath: 'https://react-micro-frontend-auth.vercel.app/'
+
   },
 
   resolve: {

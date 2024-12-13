@@ -9,8 +9,6 @@ const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
     publicPath: 'https://react-micro-frontend-zeta.vercel.app/'
     // publicPath: 'http://localhost:3000/'
   },
@@ -70,7 +68,7 @@ module.exports = (_, argv) => ({
       remotes: {
         auth: "auth@https://react-micro-frontend-auth.vercel.app/remoteEntry.js",
         product: "product@http://localhost:3002/remoteEntry.js",
-        layout: "layout@https://react-micro-frontend-layout.vercel.app/remoteEntry.js",
+        layout: "layout@http://localhost:3003/remoteEntry.js",
       },
       exposes: {},
       shared: {

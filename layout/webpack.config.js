@@ -9,8 +9,8 @@ const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    // path: path.resolve(__dirname, 'dist'),
+    // filename: 'main.js',
     publicPath: 'https://react-micro-frontend-layout.vercel.app/'
     // publicPath: 'http://localhost:3003/'
   },

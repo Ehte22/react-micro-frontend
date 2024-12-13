@@ -9,8 +9,6 @@ const printCompilationMessage = require('./compilation.config.js');
 
 module.exports = (_, argv) => ({
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
     // publicPath: 'http://localhost:3001/'
     publicPath: 'https://react-micro-frontend-auth.vercel.app/'
   },

@@ -16,10 +16,11 @@ const App = () => {
 
   useEffect(() => {
     LOAD_AUTH_API()
+
     if (location.pathname.startsWith('/product')) {
       LOAD_PRODUCT_API()
     }
-  }, [location.pathname])
+  }, [location])
 
   return <>
     <Routes>
@@ -29,7 +30,8 @@ const App = () => {
           path='/product/*'
           element={
             <Suspense
-              fallback={<div>Loading...</div>}> <Protected compo={<Product />} />
+              fallback={<div>Loading...</div>}>
+              <Protected compo={<Product />} />
             </Suspense>
           }
         />

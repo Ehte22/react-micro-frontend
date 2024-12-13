@@ -16,7 +16,6 @@ const App = () => {
 
   useEffect(() => {
     LOAD_AUTH_API()
-
     if (location.pathname.startsWith('/product')) {
       LOAD_PRODUCT_API()
     }
